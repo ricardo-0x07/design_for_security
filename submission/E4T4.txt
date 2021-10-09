@@ -1,0 +1,15 @@
+
+# What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+ - Locate the instance in private subnet and connect via NAT Gateway
+ - Ensure the Load Balancer directs all HTTp requests to HTTPS
+
+# Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+ - yes by user with account access since the encryption was only enable after and will only affect file added after server side encryption was enabled
+ - The account users will be have access both via direct access and endpoint access
+
+# Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+ - no only for data sfetr it has been enabled
+
+# What would happen if the original cloud formation templates are applied to this environment.
+ - All changes will be reset as they were originally before cli changes
+ - The template should be updated to ensure chnages persist

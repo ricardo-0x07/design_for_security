@@ -1,0 +1,7 @@
+Poor Security Practuces
+
+- 1. The Web App Security group does not limit access to the Web Server from the outside/the internet
+the will make it difficult to monitor traffic. Ideally Traffic should only be allowed on specfic ports 
+and only via the Application load balancer.
+- 2. The S3 bucket with the secrets recipes is not configured to encrypt the data stored their at rest.
+this will allowed all accoiunt users to be able to read the secret recepies.

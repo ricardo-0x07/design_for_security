@@ -1,0 +1,46 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+ - [regula](https://github.com/fugue/regula): is a tool that evaluates CloudFormation and Terraform infrastructure-as-code for potential 
+ AWS, Azure, and Google Cloud security and compliance violations prior to deployment.
+ - [cfripper](https://github.com/Skyscanner/cfripper): CFRipper is a Library and CLI security analyzer for AWS CloudFormation templates. 
+ You can use CFRipper to prevent deploying insecure AWS resources into your Cloud environment. You can write your own compliance checks 
+ by adding new custom plugins.
+ - [Cloudsploit](https://cloudsploit.com/opensource): CloudSploit by Aqua is an open-source project designed to allow detection of security 
+ risks in cloud infrastructure accounts, including: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Oracle Cloud 
+ Infrastructure (OCI), and GitHub. These scripts are designed to return a series of potential misconfigurations and security risks.
+
+
+
+### Example vulnerability
+ - misconfigurations of aws account
+ - misconfigurations of aws user roles
+ - missing enryption at rest for storage resources
+
+##Scan AMI’s or containers for OS vulnerabilities
+ - [Anchore](https://anchore.com/): Scan Container Images for Vulnerabilities from the Command Line
+ - [Clair](https://github.com/quay/clair): Clair is an open source project which provides a tool to monitor the security of your containers through 
+ the static analysis 
+ of vulnerabilities in appc and docker containers. 
+ - [Trivy](https://github.com/aquasecurity/trivy): Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as 
+ for configuration issues
+
+
+### Example vulnerability
+ - Known os version specific security issues
+ - Detecting know vulrenbility based on a database of same
+ - Detecting errant software like viruses and malware
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+ - [AWS Config](https://aws.amazon.com/config/): AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+ - [AWS Inspector](https://aws.amazon.com/inspector/): Amazon Inspector is an automated security assessment service that helps improve the security and compliance 
+ of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices.
+ - [AWS GuardDuty](https://aws.amazon.com/guardduty/): Amazon GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for 
+ malicious activity and delivers detailed security findings for visibility and remediation.
+
+
+
+### Example vulnerability
+ - Unsafe account configuration practices such MFA not being enable for root user
+ - SSH password enabled
+ - Unresticted access to instance from the internet

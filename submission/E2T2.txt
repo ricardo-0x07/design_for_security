@@ -1,0 +1,9 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+Recommendations on how to remediate the vulnerabilities:
+- 1. S3 data is not encrypted at rest: Enable encryption at rest (server side encryption) for S3 buckets
+- 2.  The RecipeWebServiceInstance EC2 instance should not reachable via the internet gateway and the instance security group: Ensure the
+ instance is only accessble via only the internet via application loadbalancer only on specfic ports. IE edit security group and remove internet access from all ports
+- 3. Amazon VPC has subnets that are assigned a public IP address.: Assign IPv4 ip addresses to subnets
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
