@@ -361,7 +361,8 @@ sudo service ssh restart
 
 1. Update the IAM policy for the instance profile role used by the web application instance to only allow read access to the free recipes S3 bucket.
 2. Test the change by using the attack instance to attempt to copy the secret recipes.
-3. Submit a screenshot of the updated IAM policy and the attempt to copy the files. 
+3. 
+4. Submit a screenshot of the updated IAM policy and the attempt to copy the files. 
 
 **Deliverables:**
 - **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.
